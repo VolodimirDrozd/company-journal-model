@@ -1,48 +1,32 @@
 package com.testproject.model;
 
-import java.util.Date;
-
 import javax.ejb.Stateless;
 
 @Stateless
 public class ProjectBean {
 
-	String Name;
-	Date startDate;
-	Date endDate;
-
-	public String getName() {
-		return Name;
-	}
-
-	public void setName(String name) {
-		Name = name;
-	}
-
-	public Date getStartDate() {
-		return startDate;
-	}
-
-	public void setStartDate(Date startDate) {
-		this.startDate = startDate;
-	}
-
-	public Date getEndDate() {
-		return endDate;
-	}
-
-	public void setEndDate(Date endDate) {
-		this.endDate = endDate;
-	}
-
-	public Boolean getIsEnd() {
-		return isEnd;
-	}
-
-	public void setIsEnd(Boolean isEnd) {
-		this.isEnd = isEnd;
-	}
-
-	Boolean isEnd;
+//	@PersistenceContext
+//	private EntityManager em;
+//
+//	public User add(Project project) {
+//		return em.merge(project);
+//	}
+//
+//	public User get(long id) {
+//		return em.find(Project.class, id);
+//	}
+//
+//	public void update(Project project) {
+//		add(project);
+//	}
+//
+//	public void delete(long id) {
+//		em.remove(get(id));
+//	}
+//
+//	public List<User> getAll() {
+//		TypedQuery<User> namedQuery = em.createNamedQuery("Project.getAll", Project.class);
+//		return namedQuery.getResultList();
+//	}
 
 }
